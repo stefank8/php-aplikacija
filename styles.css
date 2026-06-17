@@ -1,0 +1,283 @@
+:root {
+    --primary-color: #6366f1;      /* Indigo */
+    --primary-dark: #4f46e5;
+    --primary-light: #a5b4fc;
+    --text-color: #1f2937;
+    --background-color: #f8fafc;
+    --border-color: #e5e7eb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: white;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.site-title {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+nav a:hover {
+    color: var(--primary-color);
+}
+
+.nav-button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+}
+
+.nav-button:hover {
+    background-color: var(--primary-dark);
+    color: white;
+}
+
+.auth-container {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.auth-form {
+    width: 100%;
+    max-width: 420px;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.auth-form h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-group input {
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.error-message {
+    min-height: 24px;
+    margin-bottom: 1rem;
+    color: #dc2626;
+    font-size: 0.9rem;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: var(--primary-color);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.submit-btn:hover {
+    background: var(--primary-dark);
+}
+
+.auth-link {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.auth-link a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.auth-link a:hover {
+    text-decoration: underline;
+}
+
+.pocetna-body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.pocetna-header {
+  background-color: var(--primary-color);
+  padding: 20px 40px;
+  text-align: center;
+}
+
+.pocetna-title {
+  color: #fff;
+  margin: 0;
+  font-weight: 200;
+}
+
+.pocetna-main {
+  padding: 20px;
+}
+
+.pocetna-posts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pocetna-post {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.pocetna-author {
+  margin: 0 0 10px;
+  font-size: 1.1em;
+  color: #333;
+}
+
+.pocetna-content {
+  margin: 0 0 15px;
+  color: #555;
+}
+
+.pocetna-delete-btn {
+  background-color: var(--primary-dark);
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pocetna-delete-btn:hover {
+  background-color: var(--primary-color);
+}
+
+.novo-body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.novo-header {
+  background-color: var(--primary-color);
+  padding: 20px 40px;
+  text-align: center;
+}
+
+.novo-naslov {
+  color: #fff;
+  margin: 0;
+  font-weight: 200;
+}
+
+.novo-main {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.novo-forma {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+.novo-polje {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.novo-oznaka {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.novo-input,
+.novo-textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.novo-textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.novo-dugme {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.novo-dugme:hover {
+  background-color: var(--primary-color);
+}
